@@ -44,6 +44,7 @@ form.addEventListener('submit', (event) => {
     const acoesDiv = document.createElement('div');
     acoesDiv.classList.add('receita-acoes');
     const removerButton = document.createElement('button');
+    removerButton.id = 'removerBotao';
     removerButton.textContent = 'Remover';
     removerButton.addEventListener('click', () => {
         listaReceitas.removeChild(receitaItem);
